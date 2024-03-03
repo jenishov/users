@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family:  'Museo Sans Cyrl 700 300',sans-serif;
+}
+
+.container{
+max-width: 1224px;
+    width: 100%;
+    padding: 0 30px;
+margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+.header{
+    display: flex;
+    background: aliceblue;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    align-items: center;
+}
+.header__icons{
+    display: flex;
+    column-gap: 14px;
+}
+.main{
+    background: aliceblue;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    transform: translate(100px);
+
+}
+.row__card{
+    display: flex;
+    width: calc(33.33333% - 13.33333px);
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    height: 400px;
+    margin-top: 20px;
+    background: white;
+}
+
+.row__email{
+    margin: 10px 0;
+}
+
+.row__img{
+    display: flex;
+    margin: 15px 0 50px 0;
+    width: 160px;
+    border-radius: 50%;
+    border: solid 1px black;
+    object-fit: cover;
+}
+
+.header__search{
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: solid 1px grey;
+
+}
+.row__desc{
+  text-align: center;
+  padding: 0 10px 0;
+}
+.row__title{
+    display: flex;
+    white-space: normal;
+}
+
+
+@media (max-width: 676px) {
+    .row__card{
+        width: calc(50% - 13px);
+
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        transform: none;
+    }
+
+    .row__img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .row__card {
+        max-width: 250px;
+        height: 350px;
+        margin-top: 2px;
+
+    }
+    .header__search {
+        width: 160px;
+
+    }
+    .header__icons {
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .row__card{
+        width: 100%;
+    }
+    .row__img{
+        margin: 15px 0 15px 0;
+
+    }
+    .header__search {
+        width: 100px;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .row__card{
+        width: 100%;
+    }
+    .row__img{
+        margin: 15px 0 15px 0;
+
+    }
+    .header__search {
+        width: 100px;
+
+    }
+
+}
+
+@media (max-width: 325px) {
+    .header__search {
+        width: 70px;
+
+    }
+}
+
+
+
