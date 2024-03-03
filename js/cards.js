@@ -7,11 +7,7 @@ let catalogRow = document.querySelector('.row');
         fetch('https://jsonplaceholder.typicode.com/users')
             .then((res) => res.json())
             .then((data) =>{
-                data.filter((el)=>{
-                    if (el.name.toUpperCase()){
-
-                    }
-                }).forEach((item)=>{
+                data.forEach((item)=>{
                     catalogRow.innerHTML +=`
 
             <div class="row__card">
